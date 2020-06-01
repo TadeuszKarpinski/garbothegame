@@ -302,6 +302,7 @@ $(document).ready(function(){
 	  if (myVideo.paused && steps[current_step]["special"].indexOf("click") >= 0) {
 		myVideo.play();
 		myAudio.play();
+		maximizeme();
 	  }
 	  if (steps[current_step]["steps"]["left"]["when"] === "click" && steps[current_step]["steps"]["left"]["when"] == "click") {
 		  change_step("right");
@@ -317,6 +318,17 @@ $(document).ready(function(){
 	$("#right").click(function(){
 		change_step("right");
 	});
+	
+	function maximizeme(){
+		var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+		;
+		rfs.call(el);
+	}
 	
 	function change_step(turn) {
 		current_step = steps[current_step]["steps"][turn]["where"];
