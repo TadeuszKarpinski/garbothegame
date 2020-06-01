@@ -32,10 +32,12 @@ $(document).ready(function(){
 			"src": "data/video/001.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "always",
 					"where": "01",
 				},
 				"right": {
+					"caption": "",
 					"when": "always",
 					"where": "01",
 				},
@@ -46,10 +48,12 @@ $(document).ready(function(){
 			"src": "data/video/01.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "click",
 					"where": "1",
 				},
 				"right": {
+					"caption": "",
 					"when": "click",
 					"where": "1",
 				},
@@ -60,11 +64,13 @@ $(document).ready(function(){
 			"src": "data/video/1.mp4",
 			"steps": {
 				"left": {
-					"when": "caabgg",
+					"caption": "RUN AWAY",
+					"when": "bgecc",
 					"where": "2a",
 				},
 				"right": {
-					"when": "bbcddcba",
+					"caption": "OBEY YOUR HUSBAND",
+					"when": "gacce",
 					"where": "2b",
 				},
 			},
@@ -74,11 +80,13 @@ $(document).ready(function(){
 			"src": "data/video/2b.mp4",
 			"steps": {
 				"left": {
-					"when": "aaaa",
+					"caption": "INVITE OVER",
+					"when": "bgcce",
 					"where": "3b1",
 				},
 				"right": {
-					"when": "bbbb",
+					"caption": "GO HOME ALONE",
+					"when": "ggaed",
 					"where": "3b2",
 				},
 			}
@@ -88,11 +96,13 @@ $(document).ready(function(){
 			"src": "data/video/3b1.mp4",
 			"steps": {
 				"left": {
-					"when": "aaaa",
+					"caption": "STAY ASHAMED",
+					"when": "gacce",
 					"where": "4b1",
 				},
 				"right": {
-					"when": "bbbb",
+					"caption": "KILL YOUR HUSBAND",
+					"when": "geccc",
 					"where": "4b2",
 				},
 			}
@@ -102,11 +112,13 @@ $(document).ready(function(){
 			"src": "data/video/3b2.mp4",
 			"steps": {
 				"left": {
-					"when": "aaaa",
+					"caption": "KILL YOUR HUSBAND",
+					"when": "geccc",
 					"where": "4ab",
 				},
 				"right": {
-					"when": "bbbb",
+					"caption": "STAY ASHAMED",
+					"when": "gacce",
 					"where": "4b3",
 				},
 			}
@@ -116,10 +128,12 @@ $(document).ready(function(){
 			"src": "data/video/4b1.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
 				"right": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
@@ -130,10 +144,12 @@ $(document).ready(function(){
 			"src": "data/video/4b2.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
 				"right": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
@@ -144,10 +160,12 @@ $(document).ready(function(){
 			"src": "data/video/4b3.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
 				"right": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
@@ -158,11 +176,13 @@ $(document).ready(function(){
 			"src": "data/video/2a.mp4",
 			"steps": {
 				"left": {
-					"when": "3b1",
+					"caption": "INVITE OVER",
+					"when": "bgcce",
 					"where": "3a1",
 				},
 				"right": {
-					"when": "3b1",
+					"caption": "GO HOME ALONE",
+					"when": "ggaed",
 					"where": "3a2",
 				},
 			}
@@ -172,11 +192,13 @@ $(document).ready(function(){
 			"src": "data/video/3a1.mp4",
 			"steps": {
 				"left": {
-					"when": "3b1",
+					"caption": "LET THEM DUEL",
+					"when": "bgcce",
 					"where": "4a1",
 				},
 				"right": {
-					"when": "3b1",
+					"caption": "STOP THEM",
+					"when": "ggaed",
 					"where": "4a2",
 				},
 			}
@@ -186,6 +208,7 @@ $(document).ready(function(){
 			"src": "data/video/4a1.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
@@ -200,10 +223,12 @@ $(document).ready(function(){
 			"src": "data/video/4a2.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
 				"right": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
@@ -214,11 +239,13 @@ $(document).ready(function(){
 			"src": "data/video/3a2.mp4",
 			"steps": {
 				"left": {
-					"when": "3b1",
+					"caption": "KILL YOUR HUSBAND",
+					"when": "geccc",
 					"where": "4ab",
 				},
 				"right": {
-					"when": "3b1",
+					"caption": "OBEY YOUR HUSBAND",
+					"when": "gacce",
 					"where": "4a3",
 				},
 			}
@@ -228,10 +255,12 @@ $(document).ready(function(){
 			"src": "data/video/4a3.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
 				"right": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
@@ -242,10 +271,12 @@ $(document).ready(function(){
 			"src": "data/video/4ab.mp4",
 			"steps": {
 				"left": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
 				"right": {
+					"caption": "",
 					"when": "always",
 					"where": "end",
 				},
@@ -256,12 +287,14 @@ $(document).ready(function(){
 			"src": "data/video/9.mp4",
 			"steps": {
 				"left": {
-					"when": "3b1",
-					"where": "1",
+					"caption": "",
+					"when": "always",
+					"where": "01",
 				},
 				"right": {
-					"when": "3b1",
-					"where": "1",
+					"caption": "",
+					"when": "always",
+					"where": "01",
 				},
 			}
 		},
