@@ -17,7 +17,7 @@ function notes_played(notes) {
 
 $(document).ready(function(){
 	
-	var current_step = "001";
+	var current_step = "01";
 	var myVideo = document.getElementById("video"); 
 	var controls = document.getElementById("controls");
 	var content = document.getElementById("content");
@@ -42,7 +42,7 @@ $(document).ready(function(){
 			},
 		},
 		"01": {
-			"special": ["loop",],
+			"special": ["loop", "click",],
 			"src": "data/video/01.mp4",
 			"steps": {
 				"left": {
@@ -268,17 +268,15 @@ $(document).ready(function(){
 	}
 	
 	$("#video").click(function(){
-		console.log(steps[current_step]["special"].indexOf("click"));
+	  if (steps[current_step]["steps"]["left"]["when"] === "click" && steps[current_step]["steps"]["left"]["when"] == "click") {
+		  change_step("right");
+	  }
 	  if (myVideo.paused && steps[current_step]["special"].indexOf("click") >= 0) {
 		myVideo.play(); 
 		myAudio.play();
 	  }
 	  // else 
 		// myVideo.pause(); 
-	
-	  if (steps[current_step]["steps"]["left"]["when"] === "click" && steps[current_step]["steps"]["left"]["when"] == "click") {
-		  change_step("right");
-	  }
 	});	
 	
 	$("#left").click(function(){
@@ -316,7 +314,10 @@ $(document).ready(function(){
 
 		if (steps[current_step]["steps"]["right"]["when"] === "always" && steps[current_step]["steps"]["left"]["when"] === "always") {
 			change_step("right");
-		} else {
+		} else if (steps[current_step]["steps"]["right"]["when"] === "click" && steps[current_step]["steps"]["left"]["when"] === "click") {
+			
+		} else
+		{
 			$("#content").fadeIn(500);
 			$("#left_decision").fadeIn(500);
 			$("#right_decision").fadeIn(500);
@@ -342,6 +343,7 @@ $(document).ready(function(){
 	
 	// $("#right_decision").text(steps[current_step]["steps"]["right"]["when"]);
 	// $("#left_decision").text(steps[current_step]["steps"]["left"]["when"]);
+	
 	<!-- myVideo.play(); -->
 	
 });
