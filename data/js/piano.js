@@ -113,7 +113,7 @@
                 mousedown: function(evt) { $keys.trigger('note-'+i+'.play'); }
             }).appendTo($keys);
 			if (!blackKeyClass(i)) {
-				$key.append("<div class='key_note'>"+notes_notes[i+12]+"</div>");
+				$key.append("<div class='key_note unselectable'>"+notes_notes[i+12]+"</div>");
 			}
         }
 
