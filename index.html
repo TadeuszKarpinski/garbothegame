@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<title>SutynaHTML</title>
+		<link rel="stylesheet" type="text/css" href="data/css/piano.css" />
+	</head>
+	<body style="margin: 0px; background-color: #000000;"> 
+
+		<video id="video" width="100%"> 
+			 <source src="" onclick="playPause()" type="video/mp4"> 
+		 </video> 
+		<div id="controls" style="display: none; position: absolute; text-align:center; top: 10px;">
+			<button id="left">Left</button>
+			<button id="right">Right</button>
+		</div>
+		
+		<div id="left_decision" style="position: absolute; text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: none;"></div>
+		<div id="right_decision" style="position: absolute; text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: none;"></div>
+		<input type="text" id="played_notes" style="position: absolute; text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: none;"/>
+
+
+		<div id="content">
+            <div id="content-inner">
+                <div id="piano">
+                </div>
+            </div>
+        </div>
+		
+		<audio id="audio" loop controls style="position: absolute; display:none;">
+		  <source src="data/video/music.mp3" type="audio/mpeg">
+		</audio>
+
+		<script src="data/js/jquery.js"></script>
+		<script src="data/js/audio.js"></script>
+		<script src="data/js/query.js"></script>
+		<script src="data/js/piano.js"></script>
+		
+	</body> 
+</html>
