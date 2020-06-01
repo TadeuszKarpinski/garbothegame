@@ -7,7 +7,7 @@
 	</head>
 	<body style="margin: 0px; background-color: #000000;"> 
 
-		<video id="video" width="100%" autoplay="true"> 
+		<video id="video" width="100%"> 
 			 <source src="" onclick="playPause()" type="video/mp4"> 
 		 </video> 
 		<div id="controls" style="display: none; position: absolute; text-align:center; top: 10px;">
@@ -15,11 +15,16 @@
 			<button id="right">Right</button>
 		</div>
 		
-		<div id="left_decision" style="position: absolute; text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: none;"></div>
-		<div id="left_caption" style="position: absolute; text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: none; max-width: 200px; line-height: 1.2;"></div>
-		<div id="right_decision" style="position: absolute; text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: none;"></div>
-		<div id="right_caption" style="position: absolute; text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: none; max-width: 200px; line-height: 1.2;"></div>
-		
+		<span id="left_panel" style="min-width: 200px; position: absolute;">
+			<div id="left_decision" style="text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: block;"></div>
+			<br/>
+			<div id="left_caption" style="text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: block; max-width: 200px; line-height: 1.2;"></div>
+		</span>
+		<span id="right_panel" style="min-width: 200px; position: absolute;">
+			<div id="right_decision" style="text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: block;"></div>
+			<br/>
+			<div id="right_caption" style="text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: block; max-width: 200px; line-height: 1.2;"></div>
+		</span>
 		<input type="text" id="played_notes" style="position: absolute; text-align:center; top: 10px; color: #ffffff; font-size: 30px; display: none;"/>
 
 
