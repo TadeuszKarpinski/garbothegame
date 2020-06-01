@@ -83,7 +83,7 @@ $(document).ready(function(){
 					"where": "3b1",
 				},
 				"right": {
-					"caption": "GO HOME ALONE",
+					"caption": "GO INSIDE ALONE",
 					"when": "ggaed",
 					"where": "3b2",
 				},
