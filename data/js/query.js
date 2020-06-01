@@ -42,7 +42,7 @@ $(document).ready(function(){
 			},
 		},
 		"01": {
-			"special": ["loop", "click",],
+			"special": ["loop",],
 			"src": "data/video/01.mp4",
 			"steps": {
 				"left": {
@@ -300,7 +300,8 @@ $(document).ready(function(){
 	
 	$("#video").click(function(){
 	  if (myVideo.paused && steps[current_step]["special"].indexOf("click") >= 0) {
-		myVideo.play(); 
+		myVideo.play();
+		change_step("right");		
 		myAudio.play();
 	  }
 	  if (steps[current_step]["steps"]["left"]["when"] === "click" && steps[current_step]["steps"]["left"]["when"] == "click") {
