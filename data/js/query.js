@@ -1,11 +1,7 @@
 var can_play = false;
 
 function notes_played(notes) {
-	can_play = true;
-	console.log(notes);
-	console.log($("#left_decision").text());
 	if (can_play) {
-		console.log(notes);
 		if (notes.indexOf($("#left_decision").text()) >= 0) {
 			$("#left").click();
 		}
@@ -17,7 +13,7 @@ function notes_played(notes) {
 
 $(document).ready(function(){
 	
-	var current_step = "01";
+	var current_step = "001";
 	var myVideo = document.getElementById("video"); 
 	var controls = document.getElementById("controls");
 	var content = document.getElementById("content");
@@ -303,12 +299,12 @@ $(document).ready(function(){
 	}
 	
 	$("#video").click(function(){
-	  if (steps[current_step]["steps"]["left"]["when"] === "click" && steps[current_step]["steps"]["left"]["when"] == "click") {
-		  change_step("right");
-	  }
 	  if (myVideo.paused && steps[current_step]["special"].indexOf("click") >= 0) {
 		myVideo.play(); 
 		myAudio.play();
+	  }
+	  if (steps[current_step]["steps"]["left"]["when"] === "click" && steps[current_step]["steps"]["left"]["when"] == "click") {
+		  change_step("right");
 	  }
 	  // else 
 		// myVideo.pause(); 
