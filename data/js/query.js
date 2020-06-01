@@ -301,7 +301,6 @@ $(document).ready(function(){
 	$("#video").click(function(){
 	  if (myVideo.paused && steps[current_step]["special"].indexOf("click") >= 0) {
 		myVideo.play();
-		change_step("right");		
 		myAudio.play();
 	  }
 	  if (steps[current_step]["steps"]["left"]["when"] === "click" && steps[current_step]["steps"]["left"]["when"] == "click") {
